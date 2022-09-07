@@ -61,3 +61,8 @@ main.py is
 
 
 # Setting up Github 
+
+## Connecting the repository to a new github repository via SSH
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+
+

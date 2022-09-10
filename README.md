@@ -55,6 +55,13 @@ This command adds a line to your **pyproject.toml** file. It adds a line after t
 installing requests is:
 ``requests = "^2.28.1"``
 
+## Adding Dev / Test dependencies to a Poetry Project
+When setting up a development environment, its best to separate your dependencies into the normal build dependencies that are required for running the program, and a separate group for all dependencies needed for your development environment.
+
+This can be done by adding a --group tag and then following it with a group name. This following example shows adding pytest in a group called dev
+
+``poetry add pytest --group dev``
+
 
 # Adding a main.py
 main.py is 

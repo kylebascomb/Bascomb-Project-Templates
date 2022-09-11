@@ -11,12 +11,6 @@ class EvenOddNumber:
     def subtract_num(self, num_to_subtract):
         self.num -= num_to_subtract
 
-    def multiply_num(self, num_to_multiply):
-        self.num *= num_to_multiply
-
-    def divide_num(self, num_to_divide):
-        self.num /= num_to_divide
-
     def num_is_even(self):
         return self.num % 2 == 0
 

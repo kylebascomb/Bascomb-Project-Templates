@@ -64,7 +64,34 @@ This can be done by adding a --group tag and then following it with a group name
 
 
 # Adding a main.py
-main.py is 
+main.py is
+
+# Using Pytest
+Pytest is the go to testing library for python.
+
+## Installing Pytest
+You can add pytest to your project as detailed in the "Adding Dev / Tewst dependencies to a Poetry Project" section above:
+``poetry add pytest --group dev``
+
+## Writing Tests:
+
+### Using @pytest.mark.parametrize
+The @pytest.mark.parametrize is used to parametrize several inputs to a single function. An example is shown below:
+
+``
+@pytest.mark.parametrize(
+    "test_input, expected",
+    [(10, True), (11, False), (0, True), (-1, False), (-2, True)],
+)
+def test_even_odd(test_input, expected):
+    number = EvenOddNumber(test_input)
+    assert number.num_is_even() == expected
+``
+
+## Using Pytest
+While in the Poetry Environment, you can run all your pytests using the ``pytest`` command in the terminal. This will run all functions in the directory that are prepended with 'test_' and located in a file that is prepended with 'test_'
+
+
 
 
 # Setting up Github 

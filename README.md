@@ -88,8 +88,34 @@ def test_even_odd(test_input, expected):
     assert number.num_is_even() == expected
 ``
 
+### Using @pytest.mark.skip
+TODO
+
+### Using @pytest.mark.xfail
+TODO
+
+### Using Pytest with exceptions
+`` with pytest.raises(ValueError): ``
+
+### Using fixtures
+Fixtures are a way to duplicate code across tests
+TODO
+
+### Coverage Tests
+
 ## Using Pytest
 While in the Poetry Environment, you can run all your pytests using the ``pytest`` command in the terminal. This will run all functions in the directory that are prepended with 'test_' and located in a file that is prepended with 'test_'
+
+### Using pytest-cov for Coverage tests
+We can install a package called pytest-cov to monitor the coverage of the pytests over the source code. First we have to install pytest-cov
+
+poetry add pytest-cov --group dev
+
+
+To run pytest-cov, you run your pytest script with the --cov="source code folder" and "/tests" to specify your test directory. See example below:
+
+```pytest --cov=poetry_template tests/```
+
 
 
 

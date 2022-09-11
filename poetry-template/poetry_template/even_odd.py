@@ -1,4 +1,4 @@
-from ast import Num
+
 
 
 class EvenOddNumber:
@@ -21,8 +21,4 @@ class EvenOddNumber:
         self.num = num
 
 
-if __name__ == "__main__":
-    number = EvenOddNumber(5)
-    print("Starting number at 5...")
-    number.add_num(5)
-    print("Adding 5 to number. Number is now {}".format(number.get_num()))
+

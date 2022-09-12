@@ -10,15 +10,9 @@ def test_even_odd(test_input, expected):
     number = EvenOddNumber(test_input)
     assert number.num_is_even() == expected
 
+
 @pytest.mark.parametrize(
-    "test_input, expected",
-    [
-        (10, 10),
-        (5, 5),
-        (0, 0),
-        (-2, -2),
-        (-100000, -100000)
-    ]
+    "test_input, expected", [(10, 10), (5, 5), (0, 0), (-2, -2), (-100000, -100000)]
 )
 def test_add(test_input, expected):
     number = EvenOddNumber(0)
@@ -27,35 +21,18 @@ def test_add(test_input, expected):
 
 
 @pytest.mark.parametrize(
-    "test_input, expected",
-    [
-        (10, -10),
-        (5, -5),
-        (0, 0),
-        (-2, 2),
-        (-100000, 100000)
-    ]
+    "test_input, expected", [(10, -10), (5, -5), (0, 0), (-2, 2), (-100000, 100000)]
 )
 def test_subtract(test_input, expected):
     number = EvenOddNumber(0)
     number.subtract_num(test_input)
     assert number.get_num() == expected
 
+
 @pytest.mark.parametrize(
-    "test_input, expected",
-    [
-        (10, 10),
-        (5, 5),
-        (0, 0),
-        (-2, -2),
-        (-100000, -100000)
-    ]
+    "test_input, expected", [(10, 10), (5, 5), (0, 0), (-2, -2), (-100000, -100000)]
 )
 def test_set(test_input, expected):
     number = EvenOddNumber(0)
     number.set_num(test_input)
     assert number.get_num() == expected
-
-
-
-

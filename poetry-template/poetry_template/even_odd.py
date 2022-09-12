@@ -1,6 +1,3 @@
-
-
-
 class EvenOddNumber:
     def __init__(self, num) -> None:
         self.num = num
@@ -19,6 +16,3 @@ class EvenOddNumber:
 
     def set_num(self, num):
         self.num = num
-
-
-

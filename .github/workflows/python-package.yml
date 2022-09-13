@@ -25,10 +25,12 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
+      working-directory: poetry_template
       run: |
+        cd 
         pip install poetry
-        poetry shell
         poetry install
     - name: Test with pytest
+      working-directory: poetry_template
       run: |
         poetry run pytest cov=poetry_template tests/

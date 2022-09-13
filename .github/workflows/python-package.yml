@@ -27,7 +27,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install poetry
-        cd ./poetry_template
+        poetry shell
         poetry install
     - name: Test with pytest
       run: |

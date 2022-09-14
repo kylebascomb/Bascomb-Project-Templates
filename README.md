@@ -1,3 +1,5 @@
+[![Python package](https://github.com/kylebascomb/Bascomb-Project-Templates/actions/workflows/pytests.yml/badge.svg)](https://github.com/kylebascomb/Bascomb-Project-Templates/actions/workflows/pytests.yml)
+
 # Starting a Standalone Virtual Enviroment
 
 If not installed:

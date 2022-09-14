@@ -38,6 +38,7 @@ def test_set(test_input, expected):
     assert number.get_num() == expected
 
 
+@pytest.mark.xfail
 def test_fail():
     number = EvenOddNumber(0)
     assert number.get_num() == -1

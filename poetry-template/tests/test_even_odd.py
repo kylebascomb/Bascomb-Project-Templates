@@ -36,3 +36,8 @@ def test_set(test_input, expected):
     number = EvenOddNumber(0)
     number.set_num(test_input)
     assert number.get_num() == expected
+
+
+def test_fail():
+    number = EvenOddNumber(0)
+    assert number.get_num() == -1

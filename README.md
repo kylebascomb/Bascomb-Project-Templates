@@ -1,5 +1,11 @@
 [![Python package](https://github.com/kylebascomb/Bascomb-Project-Templates/actions/workflows/pytests.yml/badge.svg)](https://github.com/kylebascomb/Bascomb-Project-Templates/actions/workflows/pytests.yml)
 
+# Project Overview
+This repo is a simple collection of commands and templates for creating projects. Currently, it includes a template for:
+* Poetry package manage for python
+* Pytest for testing python projects
+* Github Actions for CI
+
 # Starting a Standalone Virtual Enviroment
 
 If not installed:
@@ -72,7 +78,7 @@ main.py is
 Pytest is the go to testing library for python.
 
 ## Installing Pytest
-You can add pytest to your project as detailed in the "Adding Dev / Tewst dependencies to a Poetry Project" section above:
+You can add pytest to your project as detailed in the "Adding Dev / Test dependencies to a Poetry Project" section above:
 ``poetry add pytest --group dev``
 
 ## Writing Tests:
@@ -91,10 +97,10 @@ def test_even_odd(test_input, expected):
 ``
 
 ### Using @pytest.mark.skip
-TODO
+Marking a function as skip simply means that the test will be skipped when running the pytest command.
 
 ### Using @pytest.mark.xfail
-TODO
+Marking a function as xfail means that is is expected to fail.
 
 ### Using Pytest with exceptions
 `` with pytest.raises(ValueError): ``

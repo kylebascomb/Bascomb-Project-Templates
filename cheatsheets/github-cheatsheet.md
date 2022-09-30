@@ -32,4 +32,6 @@ https://docs.github.com/en/get-started/importing-your-projects-to-github/importi
 # Creating Github Actions for CI/CD
 Github actions is an invaluable tool for quickyl automatic CI / CD pipelines for your project.
 
-An example for running pytest on every push and pull request can be found at ../.gitbhub/workflows.pytest.yaml
+An example for running pytest on every push and pull request can be found at 
+
+``../.github/workflows.pytest.yaml``

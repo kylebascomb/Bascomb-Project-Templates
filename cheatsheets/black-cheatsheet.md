@@ -1,6 +1,6 @@
 # Black Overview
 
-Black is a great tool to format your code in a PEP8 compliant opinated manner.
+Black is a great tool to format your code in a PEP8 compliant opinionated manner.
 
 # Installation
 

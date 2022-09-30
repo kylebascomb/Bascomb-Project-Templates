@@ -1,3 +1,6 @@
+# Pytest Overview
+Pytest is the go-to tool for testing you python code. It has a large set of features to implement unit and integration tests in your python projects!
+
 # Using Pytest
 Pytest is the go to testing library for python.
 
@@ -30,8 +33,7 @@ Marking a function as xfail means that is is expected to fail.
 `` with pytest.raises(ValueError): ``
 
 ### Using fixtures
-Fixtures are a way to duplicate code across tests
-TODO
+Fixtures are a way to duplicate code across tests. I do not have an example for fixtures yet.
 
 
 ## Using Pytest

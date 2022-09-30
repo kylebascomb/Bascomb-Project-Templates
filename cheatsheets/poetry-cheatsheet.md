@@ -1,3 +1,8 @@
+# Poetry Overview
+
+Poetry is a fantastic tool for both package management and virtual environment management in your python projects. 
+
+
 # Using Poetry
 
 ## Installing Poetry
@@ -26,8 +31,7 @@ for example, if you want to run main.py:
 To add a dependency to your project, type the following command into your Poetry Shell. This example will install the requests library.
 ``poetry add requests``
 
-This command adds a line to your **pyproject.toml** file. It adds a line after the [tool.poetry.dependencies] section. For example, the line added for
-installing requests is:
+This command adds a line to your **pyproject.toml** file. It adds a line after the [tool.poetry.dependencies] section. For example, the line added for installing requests is:
 ``requests = "^2.28.1"``
 
 ## Adding Dev / Test dependencies to a Poetry Project

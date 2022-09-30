@@ -65,7 +65,7 @@ You can add pytest to your project as detailed in the "Adding Dev / Test depende
 ### Using @pytest.mark.parametrize
 The @pytest.mark.parametrize is used to parametrize several inputs to a single function. An example is shown below:
 
-``
+```
 @pytest.mark.parametrize(
     "test_input, expected",
     [(10, True), (11, False), (0, True), (-1, False), (-2, True)],
@@ -73,7 +73,7 @@ The @pytest.mark.parametrize is used to parametrize several inputs to a single f
 def test_even_odd(test_input, expected):
     number = EvenOddNumber(test_input)
     assert number.num_is_even() == expected
-``
+```
 
 ### Using @pytest.mark.skip
 Marking a function as skip simply means that the test will be skipped when running the pytest command.
@@ -84,9 +84,6 @@ Marking a function as xfail means that is is expected to fail.
 ### Using Pytest with exceptions
 `` with pytest.raises(ValueError): ``
 
-### Using fixtures
-Fixtures are a way to duplicate code across tests
-TODO
 
 ### Coverage Tests
 

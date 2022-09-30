@@ -1,4 +1,4 @@
-# Black
+# Black Overview
 
 Black is a great tool to format your code in a PEP8 compliant opinated manner.
 

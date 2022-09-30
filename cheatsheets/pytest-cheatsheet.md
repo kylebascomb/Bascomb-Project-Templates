@@ -10,15 +10,15 @@ You can add pytest to your project as detailed in the "Adding Dev / Tewst depend
 ### Using @pytest.mark.parametrize
 The @pytest.mark.parametrize is used to parametrize several inputs to a single function. An example is shown below:
 
-<code>
-@pytest.mark.parametrize( <br>
-    "test_input, expected", <br>
-    [(10, True), (11, False), (0, True), (-1, False), (-2, True)], <br>
+```
+@pytest.mark.parametrize( 
+    "test_input, expected", 
+    [(10, True), (11, False), (0, True), (-1, False), (-2, True)], 
 )
-def test_even_odd(test_input, expected):<br>
-    number = EvenOddNumber(test_input)<br>
-    assert number.num_is_even() == expected<br>
-</code>
+def test_even_odd(test_input, expected):
+    number = EvenOddNumber(test_input)
+    assert number.num_is_even() == expected
+```
 
 ### Using @pytest.mark.skip
 Marking a function as skip simply means that the test will be skipped when running the pytest command.

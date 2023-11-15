@@ -30,7 +30,7 @@ https://docs.github.com/en/get-started/importing-your-projects-to-github/importi
 ### NOTE: -b main initializes the 'main' branch. By default, git will use the 'master' branch, but this naming convention has been pushed out due to the negative connotations associated with the origin of the term. 
 
 # Creating Github Actions for CI/CD
-Github actions is an invaluable tool for quickyl automatic CI / CD pipelines for your project.
+Github actions is an invaluable tool for quick automatic CI / CD pipelines for your project.
 
 An example for running pytest on every push and pull request can be found at 
 
